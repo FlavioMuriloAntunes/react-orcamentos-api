@@ -5,19 +5,19 @@ import Listar from "./Pages/Listar";
 import Deletar from "./Pages/Deletar";
 import Atualizar from "./Pages/Atualizar";
 
-
 function App() {
   return (
     <Routes>
       {/* Página inicial */}
       <Route path="/" element={<Menu />} />
 
-      {/* páginas */}
+      {/* Páginas */}
       <Route path="/cadastrar" element={<Cadastrar />} />
       <Route path="/listar" element={<Listar />} />
       <Route path="/deletar" element={<Deletar />} />
       <Route path="/atualizar" element={<Atualizar />} />
-      
+
+      {/* Rota padrão (fallback) */}
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
