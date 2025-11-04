@@ -1,5 +1,7 @@
 import React from "react";
-import './Listar.css';
+import "../styles/global.css";
+
+
 
 const Listar = () => {
   // Dados fictícios

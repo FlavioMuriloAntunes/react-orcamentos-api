@@ -1,5 +1,7 @@
 import React from 'react';
-import './Cadastrar.css';
+import "../styles/global.css";
+
+
 
 
 const Cadastrar = () => {

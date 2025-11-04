@@ -1,0 +1,142 @@
+/* ======= ESTILOS GERAIS ======= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======= CONTAINERS DE PÁGINA ======= */
+.page,
+.listar-page {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  margin: 60px auto;
+}
+
+.page {
+  max-width: 600px;
+}
+
+.listar-page {
+  max-width: 900px;
+}
+
+/* ======= TÍTULOS ======= */
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* ======= FORMULÁRIOS ======= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  color: #34495e;
+}
+
+input,
+textarea {
+  padding: 12px 14px;
+  border: 1px solid #ccd1d9;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* ======= TABELAS ======= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 16px;
+}
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+}
+
+tbody td {
+  color: #34495e;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* ======= BOTÕES ======= */
+button {
+  padding: 12px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.02);
+}
+
+/* ======= PARÁGRAFOS ======= */
+p {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 768px) {
+  .page,
+  .listar-page {
+    margin: 30px 10px;
+    padding: 25px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

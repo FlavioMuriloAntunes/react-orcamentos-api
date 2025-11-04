@@ -1,5 +1,7 @@
 import React from "react";
-import './Deletar.css';
+import "../styles/global.css";
+
+
 
 const Deletar = () => {
   // Dados fictícios para visualização
