@@ -24,12 +24,12 @@ const Cadastrar = () => {
       });
 
       if (response.ok) {
-        setMensagem("✅ Orçamento cadastrado com sucesso!");
+        setMensagem("Orçamento cadastrado com sucesso!");
         setClienteNome("");
         setValor("");
         setDescricao("");
       } else {
-        setMensagem("❌ Erro ao cadastrar orçamento.");
+        setMensagem("Erro ao cadastrar orçamento.");
       }
     } catch (error) {
       console.error("Erro:", error);
