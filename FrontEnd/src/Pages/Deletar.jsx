@@ -5,7 +5,7 @@ const ListarOrcamentos = () => {
   const [orcamentos, setOrcamentos] = useState([]);
   const [mensagem, setMensagem] = useState("");
 
-  // 🔹 Buscar todos os orçamentos ao carregar a página
+  // Buscar todos os orçamentos ao carregar a página
   useEffect(() => {
     buscarOrcamentos();
   }, []);
@@ -17,11 +17,11 @@ const ListarOrcamentos = () => {
         const data = await response.json();
         setOrcamentos(data);
       } else {
-        setMensagem("⚠️ Erro ao buscar orçamentos.");
+        setMensagem("Erro ao buscar orçamentos.");
       }
     } catch (error) {
       console.error("Erro:", error);
-      setMensagem("🚫 Erro de conexão com a API.");
+      setMensagem("Erro de conexão com a API.");
     }
   };
 
@@ -35,21 +35,21 @@ const ListarOrcamentos = () => {
       });
 
       if (response.ok) {
-        setMensagem("✅ Orçamento deletado com sucesso!");
+        setMensagem(" Orçamento deletado com sucesso!");
         // Atualiza a lista automaticamente
         setOrcamentos(orcamentos.filter((orc) => orc.id !== id));
       } else {
-        setMensagem("❌ Erro ao deletar o orçamento.");
+        setMensagem(" Erro ao deletar o orçamento.");
       }
     } catch (error) {
       console.error("Erro:", error);
-      setMensagem("🚫 Erro de conexão com a API.");
+      setMensagem(" Erro de conexão com a API.");
     }
   };
 
   return (
     <div className="page">
-      <h2>📋 Lista de Orçamentos</h2>
+      <h2> Lista de Orçamentos</h2>
 
       {mensagem && <p style={{ marginBottom: "10px" }}>{mensagem}</p>}
 

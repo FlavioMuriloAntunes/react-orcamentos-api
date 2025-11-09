@@ -13,7 +13,7 @@ const Listar = () => {
 
   return (
     <div className="listar-page">
-      <h2>🧾 Clientes Cadastrados</h2>
+      <h2> Clientes Cadastrados</h2>
 
       <table>
         <thead>
@@ -28,7 +28,7 @@ const Listar = () => {
           {clientes.map((cliente) => (
             <tr key={cliente.id}>
               <td>{cliente.id}</td>
-              <td>{cliente.clientenome}</td> {/* 👈 Corrigido aqui */}
+              <td>{cliente.clientenome}</td> 
               <td>{cliente.valor.toFixed(2)}</td>
               <td>{cliente.descricao}</td>
             </tr>
