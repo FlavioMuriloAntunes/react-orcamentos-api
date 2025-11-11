@@ -6,22 +6,20 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity(name = "orcamento") // especifico para minha IDE que está é uma classe de entidade necessario para o spring boot 
-// passo o nome da entidade
-
-@Table(name = "orcamento") // ela vai ter uma tabela no banco de dados 
- 
+@Entity
+@Table(name = "orcamento")
 public class Orcamento {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // vai gerando o valor dos ID automaticamente
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     private String clientenome;
     private String descricao;
     private long valor;
 
-    public Orcamento() {
-    }
-    
+    public Orcamento() {}
+
     public Orcamento(long id, String clientenome, String descricao, long valor) {
         this.id = id;
         this.clientenome = clientenome;
@@ -60,5 +58,4 @@ public class Orcamento {
     public void setValor(long valor) {
         this.valor = valor;
     }
-
 }
