@@ -59,14 +59,4 @@ O objetivo do sistema é fornecer uma interface para **cadastrar, listar, atuali
 3. Rode a aplicação: `npm run dev`
 4. Acesse no navegador: `http://localhost:5173`
 
-## 📷 Testes Realizados
 
-### POST
-
-
-### PATCH
-
-### GET
-
-
-### DELETE
